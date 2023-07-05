@@ -19,15 +19,16 @@ static const char col_gray1[]       = "#363636"; // Bar Background
 static const char col_gray2[]       = "#660d0d"; // Unselected Window Border
 static const char col_gray3[]       = "#bbbbbb"; // Unselected Font Color Tag
 static const char col_gray4[]       = "#FFFFFF"; // Selected font color
-static const char col_cyan[]        = "#b51919"; // Selected window border + selected tag + name
+static const char col_gray5[]       = "#FF4D4D"; // Title And Selected Tag
+static const char col_cyan[]        = "#b51919"; // Selected window border
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray5, col_gray1,  col_cyan  },
 };
 
 /* tagging */
-static const char *tags[] = { "home", "web", "file", "code", "pict", "vid", "vbox", "mail", "spfy" };
+static const char *tags[] = { "󰋜", "󰍉", "󱂵", "󰨞", "󰋩", "󰕧", "󰬖󰬚", "󰙯", "󰓇" };
 
 /* Lockfile */
 static char lockfile[] = "/tmp/dwm.lock";
